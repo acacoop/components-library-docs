@@ -4,9 +4,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/primitives", label: "Primitives" },
-    { path: "/components", label: "Components" },
+    { path: "/", label: "Inicio" },
+    { path: "/primitives", label: "Primitivos" },
+    { path: "/components", label: "Componentes" },
     { path: "/tokens", label: "Tokens" },
     { path: "/assets", label: "Assets" },
   ];

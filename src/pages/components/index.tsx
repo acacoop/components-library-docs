@@ -20,9 +20,9 @@ export function ComponentsPage() {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">Components</h1>
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">Componentes</h1>
         <p className="text-lg text-slate-600">
-          Componentes compuestos construidos a partir de primitives. Listos para usar
+          Componentes compuestos construidos a partir de primitivos. Listos para usar
           en aplicaciones.
         </p>
       </section>

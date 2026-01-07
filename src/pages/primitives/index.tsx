@@ -12,7 +12,7 @@ export function PrimitivesPage() {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">Primitives</h1>
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">Primitivos</h1>
         <p className="text-lg text-slate-600">
           Bloques de construcción elementales. Estos son los componentes más
           básicos que se usan para construir interfaces.

@@ -5,7 +5,7 @@ export function TokensPage() {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">Design Tokens</h1>
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">Tokens de Diseño</h1>
         <p className="text-lg text-slate-600">
           Variables de diseño para mantener consistencia visual en todos los proyectos.
         </p>
@@ -13,10 +13,10 @@ export function TokensPage() {
 
       {/* Colors */}
       <section>
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">Colors</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">Colores</h2>
         <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 space-y-8">
           <div>
-            <h3 className="font-semibold mb-4">Brand Colors</h3>
+            <h3 className="font-semibold mb-4">Colores de Marca</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <ColorSwatch name="primary" color={COLORS.primary} />
               <ColorSwatch name="primaryHover" color={COLORS.primaryHover} />
@@ -26,7 +26,7 @@ export function TokensPage() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Status Colors</h3>
+            <h3 className="font-semibold mb-4">Colores de Estado</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <ColorSwatch name="success" color={COLORS.success} />
               <ColorSwatch name="error" color={COLORS.error} />
@@ -36,7 +36,7 @@ export function TokensPage() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Text Colors</h3>
+            <h3 className="font-semibold mb-4">Colores de Texto</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <ColorSwatch name="textPrimary" color={COLORS.textPrimary} />
               <ColorSwatch name="textSecondary" color={COLORS.textSecondary} />

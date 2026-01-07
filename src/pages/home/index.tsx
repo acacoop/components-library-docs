@@ -16,7 +16,7 @@ export function HomePage() {
           v1.2.0 - Latest
         </div>
         <h1 className="text-5xl font-bold text-slate-900 mb-6">
-          Build faster with <br />
+          Desarrollá más rápido con <br />
           <span className="text-[#FF9100]">ACA Components</span>
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
@@ -44,9 +44,9 @@ export function HomePage() {
             >
               P
             </div>
-            <h3 className="font-bold text-lg mb-2">Primitives</h3>
+            <h3 className="font-bold text-lg mb-2">Primitivos</h3>
             <p className="text-slate-600 text-sm">
-              Bloques de construcción: Button, Typography, Spinner
+              Bloques de construcción: Botones, Tipografía, Spinners
             </p>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
@@ -56,9 +56,9 @@ export function HomePage() {
             >
               C
             </div>
-            <h3 className="font-bold text-lg mb-2">Components</h3>
+            <h3 className="font-bold text-lg mb-2">Componentes</h3>
             <p className="text-slate-600 text-sm">
-              Componentes compuestos: Card, StatCard, ButtonGroup
+              Componentes compuestos: Tarjetas, Estadísticas, Grupos
             </p>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
@@ -70,7 +70,7 @@ export function HomePage() {
             </div>
             <h3 className="font-bold text-lg mb-2">Tokens</h3>
             <p className="text-slate-600 text-sm">
-              Design tokens: colors, spacing, typography
+              Tokens de diseño: colores, espaciado, tipografía
             </p>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
