@@ -57,13 +57,15 @@ export function ComponentsPage() {
           </div>
 
           <CodeBlock
-            code={`import { ButtonGroup, Button } from '@acacoop/react-components-library';
-
-<ButtonGroup align="right" spacing="md">
-  <Button variant="outline">Cancelar</Button>
-  <Button variant="primary">Guardar</Button>
-</ButtonGroup>`}
             language="tsx"
+            code={`
+              import { ButtonGroup, Button } from '@acacoop/react-components-library';
+
+              <ButtonGroup align="right" spacing="md">
+                <Button variant="outline">Cancelar</Button>
+                <Button variant="primary">Guardar</Button>
+              </ButtonGroup>
+            `}
           />
         </div>
       </section>
@@ -128,23 +130,25 @@ export function ComponentsPage() {
           </Card>
 
           <CodeBlock
-            code={`import { Card, CardHeader, CardContent, CardFooter, Button } from '@acacoop/react-components-library';
-
-<Card variant="elevated" hoverable>
-  <CardHeader 
-    title="Título" 
-    subtitle="Subtítulo opcional"
-    action={<Button size="sm" variant="ghost">⋮</Button>}
-  />
-  <CardContent>
-    <p>Contenido de la card...</p>
-  </CardContent>
-  <CardFooter>
-    <Button variant="outline">Cancelar</Button>
-    <Button variant="primary">Confirmar</Button>
-  </CardFooter>
-</Card>`}
             language="tsx"
+            code={`
+              import { Card, CardHeader, CardContent, CardFooter, Button } from '@acacoop/react-components-library';
+
+              <Card variant="elevated" hoverable>
+                <CardHeader 
+                  title="Título" 
+                  subtitle="Subtítulo opcional"
+                  action={<Button size="sm" variant="ghost">⋮</Button>}
+                />
+                <CardContent>
+                  <p>Contenido de la card...</p>
+                </CardContent>
+                <CardFooter>
+                  <Button variant="outline">Cancelar</Button>
+                  <Button variant="primary">Confirmar</Button>
+                </CardFooter>
+              </Card>
+            `}
           />
         </div>
       </section>
@@ -205,17 +209,19 @@ export function ComponentsPage() {
           </div>
 
           <CodeBlock
-            code={`import { StatCard, StatCardsGrid } from '@acacoop/react-components-library';
+            language="tsx"
+            code={`
+              import { StatCard, StatCardsGrid } from '@acacoop/react-components-library';
 
-<StatCardsGrid columns={4}>
-  <StatCard
-    label="Alertas Críticas"
-    count={12}
-    severity="high"
-    icon={<AlertIcon />}
-    onClick={() => console.log('clicked')}
-  />
-  <StatCard
+              <StatCardsGrid columns={4}>
+                <StatCard
+                  label="Alertas Críticas"
+                  count={12}
+                  severity="high"
+                  icon={<AlertIcon />}
+                  onClick={() => console.log('clicked')}
+                />
+                <StatCard
     label="Pendientes"
     count={45}
     severity="medium"
@@ -254,26 +260,28 @@ export function ComponentsPage() {
           </div>
 
           <CodeBlock
-            code={`import { LoadingOverlay } from '@acacoop/react-components-library';
-
-// Fullscreen
-<LoadingOverlay 
-  message="Cargando datos..." 
-  visible={isLoading}
-  fullScreen
-/>
-
-// Dentro de un contenedor
-<div className="relative">
-  <LoadingOverlay 
-    message="Procesando..." 
-    visible={isLoading}
-    fullScreen={false}
-    transparent
-  />
-  {/* contenido */}
-</div>`}
             language="tsx"
+            code={`
+              import { LoadingOverlay } from '@acacoop/react-components-library';
+
+              // Fullscreen
+              <LoadingOverlay 
+                message="Cargando datos..." 
+                visible={isLoading}
+                fullScreen
+              />
+
+              // Dentro de un contenedor
+              <div className="relative">
+                <LoadingOverlay 
+                  message="Procesando..." 
+                  visible={isLoading}
+                  fullScreen={false}
+                  transparent
+                />
+                {/* contenido */}
+              </div>
+            `}
           />
         </div>
       </section>

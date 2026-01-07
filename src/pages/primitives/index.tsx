@@ -54,23 +54,25 @@ export function PrimitivesPage() {
           </div>
 
           <CodeBlock
-            code={`import { Button } from '@acacoop/react-components-library';
-
-// Variantes
-<Button variant="primary">Primary</Button>
-<Button variant="secondary">Secondary</Button>
-<Button variant="destructive">Destructive</Button>
-<Button variant="outline">Outline</Button>
-
-// Tamaños
-<Button size="sm">Small</Button>
-<Button size="md">Medium</Button>
-<Button size="lg">Large</Button>
-
-// Estados
-<Button disabled>Disabled</Button>
-<Button loading>Loading</Button>`}
             language="tsx"
+            code={`
+              import { Button } from '@acacoop/react-components-library';
+
+              // Variantes
+              <Button variant="primary">Primary</Button>
+              <Button variant="secondary">Secondary</Button>
+              <Button variant="destructive">Destructive</Button>
+              <Button variant="outline">Outline</Button>
+
+              // Tamaños
+              <Button size="sm">Small</Button>
+              <Button size="md">Medium</Button>
+              <Button size="lg">Large</Button>
+
+              // Estados
+              <Button disabled>Disabled</Button>
+              <Button loading>Loading</Button>
+            `}
           />
         </div>
       </section>
@@ -105,24 +107,26 @@ export function PrimitivesPage() {
           </div>
 
           <CodeBlock
-            code={`import { Heading, Text, Caption, Label } from '@acacoop/react-components-library';
-
-// Headings
-<Heading level={1}>Heading 1</Heading>
-<Heading level={2}>Heading 2</Heading>
-
-// Text
-<Text size="lg">Large text</Text>
-<Text size="md">Medium text</Text>
-<Text size="sm">Small text</Text>
-
-// Caption
-<Caption>Small caption text</Caption>
-
-// Colors
-<Text color="primary">Primary</Text>
-<Text color="error">Error</Text>`}
             language="tsx"
+            code={`
+              import { Heading, Text, Caption, Label } from '@acacoop/react-components-library';
+
+              // Headings
+              <Heading level={1}>Heading 1</Heading>
+              <Heading level={2}>Heading 2</Heading>
+
+              // Text
+              <Text size="lg">Large text</Text>
+              <Text size="md">Medium text</Text>
+              <Text size="sm">Small text</Text>
+
+              // Caption
+              <Caption>Small caption text</Caption>
+
+              // Colors
+              <Text color="primary">Primary</Text>
+              <Text color="error">Error</Text>
+            `}
           />
         </div>
       </section>
@@ -164,19 +168,21 @@ export function PrimitivesPage() {
           </div>
 
           <CodeBlock
-            code={`import { Spinner, COLORS } from '@acacoop/react-components-library';
-
-// Tamaños
-<Spinner size="sm" />
-<Spinner size="md" />
-<Spinner size="lg" />
-<Spinner size="xl" />
-
-// Colores
-<Spinner color={COLORS.primary} />
-<Spinner color={COLORS.secondary} />
-<Spinner color="#custom-color" />`}
             language="tsx"
+            code={`
+              import { Spinner, COLORS } from '@acacoop/react-components-library';
+
+              // Tamaños
+              <Spinner size="sm" />
+              <Spinner size="md" />
+              <Spinner size="lg" />
+              <Spinner size="xl" />
+
+              // Colores
+              <Spinner color={COLORS.primary} />
+              <Spinner color={COLORS.secondary} />
+              <Spinner color="#custom-color" />
+            `}
           />
         </div>
       </section>

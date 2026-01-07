@@ -59,17 +59,19 @@ export function TokensPage() {
           </div>
 
           <CodeBlock
-            code={`import { COLORS, colors } from '@acacoop/react-components-library';
-
-// Uso directo
-<div style={{ backgroundColor: COLORS.primary }}>...</div>
-
-// Acceso a paletas completas
-colors.brand.primary      // "#282D86"
-colors.status.success     // "#43A047"
-colors.text.primary       // "#333333"
-colors.neutral.gray500    // "#757575"`}
             language="tsx"
+            code={`
+              import { COLORS, colors } from '@acacoop/react-components-library';
+
+              // Uso directo
+              <div style={{ backgroundColor: COLORS.primary }}>...</div>
+
+              // Acceso a paletas completas
+              colors.brand.primary      // "#282D86"
+              colors.status.success     // "#43A047"
+              colors.text.primary       // "#333333"
+              colors.neutral.gray500    // "#757575"
+            `}
           />
         </div>
       </section>
@@ -92,13 +94,15 @@ colors.neutral.gray500    // "#757575"`}
           </div>
 
           <CodeBlock
-            code={`import { spacing, gap, padding, margin } from '@acacoop/react-components-library';
-
-// Uso
-<div style={{ padding: spacing[4] }}>...</div>  // 16px
-<div style={{ gap: gap.md }}>...</div>          // 16px
-<div style={{ padding: padding.lg }}>...</div>  // 24px`}
             language="tsx"
+            code={`
+              import { spacing, gap, padding, margin } from '@acacoop/react-components-library';
+
+              // Uso
+              <div style={{ padding: spacing[4] }}>...</div>  // 16px
+              <div style={{ gap: gap.md }}>...</div>          // 16px
+              <div style={{ padding: padding.lg }}>...</div>  // 24px
+            `}
           />
         </div>
       </section>
@@ -123,12 +127,14 @@ colors.neutral.gray500    // "#757575"`}
           </div>
 
           <CodeBlock
-            code={`import { borderRadius } from '@acacoop/react-components-library';
-
-<div style={{ borderRadius: borderRadius.md }}>...</div>  // 8px
-<div style={{ borderRadius: borderRadius.lg }}>...</div>  // 12px
-<div style={{ borderRadius: borderRadius.full }}>...</div> // 9999px`}
             language="tsx"
+            code={`
+              import { borderRadius } from '@acacoop/react-components-library';
+
+              <div style={{ borderRadius: borderRadius.md }}>...</div>  // 8px
+              <div style={{ borderRadius: borderRadius.lg }}>...</div>  // 12px
+              <div style={{ borderRadius: borderRadius.full }}>...</div> // 9999px
+            `}
           />
         </div>
       </section>

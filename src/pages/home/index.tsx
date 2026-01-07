@@ -117,10 +117,11 @@ export function HomePage() {
                   en la raíz del proyecto:
                 </p>
                 <CodeBlock
-                  code={
-                    "@acacoop:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}"
-                  }
                   language="bash"
+                  code={`
+                    @acacoop:registry=https://npm.pkg.github.com
+                    //npm.pkg.github.com/:_authToken=\${GITHUB_TOKEN}
+                  `}
                 />
               </div>
             </div>
@@ -136,8 +137,8 @@ export function HomePage() {
               </div>
               <div className="ml-11">
                 <CodeBlock
-                  code="npm install @acacoop/react-components-library"
                   language="bash"
+                  code="npm install @acacoop/react-components-library"
                 />
               </div>
             </div>
@@ -153,14 +154,16 @@ export function HomePage() {
               </div>
               <div className="ml-11">
                 <CodeBlock
-                  code={`// Importar todo desde el paquete principal
-import { Button, Card, COLORS, brandAssets } from '@acacoop/react-components-library';
-
-// O importar desde submódulos específicos
-import { Button, Spinner } from '@acacoop/react-components-library/primitives';
-import { Card, StatCard } from '@acacoop/react-components-library/components';
-import { colors, spacing } from '@acacoop/react-components-library/tokens';`}
                   language="tsx"
+                  code={`
+                    // Importar todo desde el paquete principal
+                    import { Button, Card, COLORS, brandAssets } from '@acacoop/react-components-library';
+
+                    // O importar desde submódulos específicos
+                    import { Button, Spinner } from '@acacoop/react-components-library/primitives';
+                    import { Card, StatCard } from '@acacoop/react-components-library/components';
+                    import { colors, spacing } from '@acacoop/react-components-library/tokens';
+                  `}
                 />
               </div>
             </div>

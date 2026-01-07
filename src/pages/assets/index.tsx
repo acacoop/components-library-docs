@@ -60,20 +60,29 @@ export function AssetsPage() {
       {/* Usage */}
       <section>
         <h2 className="text-2xl font-bold text-slate-900 mb-6">Uso</h2>
+        <p className="text-slate-600 mb-4">
+          Los assets se exportan como <strong>strings base64 embebidos</strong>{" "}
+          en el código. No son URLs a archivos externos - la imagen está
+          codificada directamente en formato{" "}
+          <code className="bg-slate-100 px-1 py-0.5 rounded text-sm">
+            data:image/[tipo];base64,...
+          </code>{" "}
+          dentro del JavaScript. Funcionan sin configuración adicional y no hay
+          archivos externos que copiar.
+        </p>
         <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200">
           <CodeBlock
-            code={`import { brandAssets } from '@acacoop/react-components-library';
-
-// Usar en img tags
-<img src={brandAssets.logoIcon} alt="ACA Logo" />
-<img src={brandAssets.logoFullDark} alt="ACA Logo" />
-
-// Usar como background
-<div style={{ backgroundImage: \`url(\${brandAssets.logoIcon})\` }} />
-
-// Los assets se exportan como data URLs, no necesitan
-// configuración adicional de webpack/vite`}
             language="tsx"
+            code={`
+              import { brandAssets } from '@acacoop/react-components-library';
+
+              // En img tags
+              <img src={brandAssets.logoIcon} alt="ACA Logo" />
+              <img src={brandAssets.logoFullDark} alt="ACA Logo" />
+
+              // Como background-image
+              <div style={{ backgroundImage: \`url(\${brandAssets.logoIcon})\` }} />
+            `}
           />
         </div>
       </section>
