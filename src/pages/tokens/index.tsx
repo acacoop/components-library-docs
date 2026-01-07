@@ -1,13 +1,23 @@
-import { colors, COLORS, spacing, borderRadius, shadow, fontSize, fontWeight } from "@acacoop/components-library";
+import {
+  COLORS,
+  spacing,
+  borderRadius,
+  shadow,
+  fontSize,
+  fontWeight,
+} from "@acacoop/components-library";
 import { CodeBlock } from "../../components/CodeBlock";
 
 export function TokensPage() {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">Tokens de Diseño</h1>
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">
+          Tokens de Diseño
+        </h1>
         <p className="text-lg text-slate-600">
-          Variables de diseño para mantener consistencia visual en todos los proyectos.
+          Variables de diseño para mantener consistencia visual en todos los
+          proyectos.
         </p>
       </section>
 
@@ -21,7 +31,10 @@ export function TokensPage() {
               <ColorSwatch name="primary" color={COLORS.primary} />
               <ColorSwatch name="primaryHover" color={COLORS.primaryHover} />
               <ColorSwatch name="secondary" color={COLORS.secondary} />
-              <ColorSwatch name="secondaryHover" color={COLORS.secondaryHover} />
+              <ColorSwatch
+                name="secondaryHover"
+                color={COLORS.secondaryHover}
+              />
             </div>
           </div>
 
@@ -92,7 +105,9 @@ colors.neutral.gray500    // "#757575"`}
 
       {/* Border Radius */}
       <section>
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">Border Radius</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">
+          Border Radius
+        </h2>
         <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 space-y-8">
           <div className="flex flex-wrap gap-6">
             {Object.entries(borderRadius).map(([key, value]) => (
@@ -123,15 +138,17 @@ colors.neutral.gray500    // "#757575"`}
         <h2 className="text-2xl font-bold text-slate-900 mb-6">Shadows</h2>
         <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 space-y-8">
           <div className="flex flex-wrap gap-8">
-            {Object.entries(shadow).filter(([k]) => k !== 'none').map(([key, value]) => (
-              <div key={key} className="text-center">
-                <div
-                  className="w-24 h-24 bg-white rounded-lg mx-auto mb-2"
-                  style={{ boxShadow: value }}
-                />
-                <code className="text-xs text-slate-600">{key}</code>
-              </div>
-            ))}
+            {Object.entries(shadow)
+              .filter(([k]) => k !== "none")
+              .map(([key, value]) => (
+                <div key={key} className="text-center">
+                  <div
+                    className="w-24 h-24 bg-white rounded-lg mx-auto mb-2"
+                    style={{ boxShadow: value }}
+                  />
+                  <code className="text-xs text-slate-600">{key}</code>
+                </div>
+              ))}
           </div>
 
           <CodeBlock
@@ -147,7 +164,9 @@ colors.neutral.gray500    // "#757575"`}
 
       {/* Typography */}
       <section>
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">Typography Tokens</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">
+          Typography Tokens
+        </h2>
         <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 space-y-8">
           <div>
             <h3 className="font-semibold mb-4">Font Sizes</h3>
@@ -193,14 +212,22 @@ colors.neutral.gray500    // "#757575"`}
   );
 }
 
-function ColorSwatch({ name, color, border = false }: { name: string; color: string; border?: boolean }) {
+function ColorSwatch({
+  name,
+  color,
+  border = false,
+}: {
+  name: string;
+  color: string;
+  border?: boolean;
+}) {
   return (
     <div className="text-center">
       <div
         className="w-full h-16 rounded-lg mb-2"
-        style={{ 
+        style={{
           backgroundColor: color,
-          border: border ? '1px solid #e0e0e0' : undefined
+          border: border ? "1px solid #e0e0e0" : undefined,
         }}
       />
       <code className="text-xs text-slate-600">{name}</code>

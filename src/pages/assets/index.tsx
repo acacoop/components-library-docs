@@ -13,7 +13,9 @@ export function AssetsPage() {
 
       {/* Brand Logos */}
       <section>
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">Logos de Marca</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">
+          Logos de Marca
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Logo Icon */}
           <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 text-center">
@@ -26,7 +28,8 @@ export function AssetsPage() {
             </div>
             <h3 className="font-semibold mb-2">logoIcon</h3>
             <p className="text-sm text-slate-600 mb-4">
-              Logo icono cuadrado. Ideal para favicons, avatars y espacios pequeños.
+              Logo icono cuadrado. Ideal para favicons, avatars y espacios
+              pequeños.
             </p>
             <code className="text-xs bg-slate-100 px-2 py-1 rounded">
               brandAssets.logoIcon
@@ -44,7 +47,8 @@ export function AssetsPage() {
             </div>
             <h3 className="font-semibold mb-2">logoFullDark</h3>
             <p className="text-sm text-slate-600 mb-4">
-              Logo completo versión oscura (azul). Para usar sobre fondos claros.
+              Logo completo versión oscura (azul). Para usar sobre fondos
+              claros.
             </p>
             <code className="text-xs bg-slate-100 px-2 py-1 rounded">
               brandAssets.logoFullDark

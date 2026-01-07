@@ -20,14 +20,20 @@ export function HomePage() {
           <span className="text-[#FF9100]">ACA Components</span>
         </h1>
         <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
-          Librería de componentes React para proyectos de ACA. TypeScript, CSS-in-JS
-          y cero configuración.
+          Librería de componentes React para proyectos de ACA. TypeScript,
+          CSS-in-JS y cero configuración.
         </p>
         <div className="flex justify-center gap-4">
-          <Button variant="primary" onClick={() => window.location.hash = "#/primitives"}>
+          <Button
+            variant="primary"
+            onClick={() => (window.location.hash = "#/primitives")}
+          >
             Ver Primitives
           </Button>
-          <Button variant="outline" onClick={() => window.location.hash = "#/components"}>
+          <Button
+            variant="outline"
+            onClick={() => (window.location.hash = "#/components")}
+          >
             Ver Components
           </Button>
         </div>
@@ -111,7 +117,9 @@ export function HomePage() {
                   en la raíz del proyecto:
                 </p>
                 <CodeBlock
-                  code={"@acacoop:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}"}
+                  code={
+                    "@acacoop:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}"
+                  }
                   language="bash"
                 />
               </div>
@@ -172,7 +180,8 @@ import { colors, spacing } from '@acacoop/components-library/tokens';`}
               Primitives
             </h3>
             <p className="text-slate-600">
-              Button, Typography, Spinner - Los bloques de construcción más básicos
+              Button, Typography, Spinner - Los bloques de construcción más
+              básicos
             </p>
           </Link>
           <Link
@@ -183,7 +192,8 @@ import { colors, spacing } from '@acacoop/components-library/tokens';`}
               Components
             </h3>
             <p className="text-slate-600">
-              Card, StatCard, ButtonGroup - Componentes compuestos listos para usar
+              Card, StatCard, ButtonGroup - Componentes compuestos listos para
+              usar
             </p>
           </Link>
           <Link
@@ -194,7 +204,8 @@ import { colors, spacing } from '@acacoop/components-library/tokens';`}
               Tokens
             </h3>
             <p className="text-slate-600">
-              Colors, spacing, typography - Design tokens para consistencia visual
+              Colors, spacing, typography - Design tokens para consistencia
+              visual
             </p>
           </Link>
           <Link
@@ -204,9 +215,7 @@ import { colors, spacing } from '@acacoop/components-library/tokens';`}
             <h3 className="font-bold text-xl mb-3 text-slate-900 group-hover:text-[#039BE5] transition-colors">
               Assets
             </h3>
-            <p className="text-slate-600">
-              Logos y assets de marca de ACA
-            </p>
+            <p className="text-slate-600">Logos y assets de marca de ACA</p>
           </Link>
         </div>
       </section>

@@ -32,7 +32,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   to={item.path}
                   className={`text-sm font-medium transition-colors ${
                     location.pathname === item.path ||
-                    (item.path !== "/" && location.pathname.startsWith(item.path))
+                    (item.path !== "/" &&
+                      location.pathname.startsWith(item.path))
                       ? "text-[#FF9100]"
                       : "text-slate-600 hover:text-slate-900"
                   }`}

@@ -1,15 +1,13 @@
-import { 
-  Button, 
-  ButtonGroup, 
-  Card, 
-  CardHeader, 
-  CardContent, 
+import {
+  Button,
+  ButtonGroup,
+  Card,
+  CardHeader,
+  CardContent,
   CardFooter,
   StatCard,
   StatCardsGrid,
   LoadingOverlay,
-  Spinner,
-  COLORS 
 } from "@acacoop/components-library";
 import { CodeBlock } from "../../components/CodeBlock";
 import { useState } from "react";
@@ -22,8 +20,8 @@ export function ComponentsPage() {
       <section>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Componentes</h1>
         <p className="text-lg text-slate-600">
-          Componentes compuestos construidos a partir de primitivos. Listos para usar
-          en aplicaciones.
+          Componentes compuestos construidos a partir de primitivos. Listos para
+          usar en aplicaciones.
         </p>
       </section>
 
@@ -104,19 +102,28 @@ export function ComponentsPage() {
           </div>
 
           <Card variant="elevated" hoverable>
-            <CardHeader 
-              title="Card con Footer" 
+            <CardHeader
+              title="Card con Footer"
               subtitle="Y efecto hover"
-              action={<Button size="sm" variant="ghost">⋮</Button>}
+              action={
+                <Button size="sm" variant="ghost">
+                  ⋮
+                </Button>
+              }
             />
             <CardContent>
               <p className="text-slate-600">
-                Esta card tiene header con acción, contenido y footer con botones.
+                Esta card tiene header con acción, contenido y footer con
+                botones.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" size="sm">Cancelar</Button>
-              <Button variant="primary" size="sm">Confirmar</Button>
+              <Button variant="outline" size="sm">
+                Cancelar
+              </Button>
+              <Button variant="primary" size="sm">
+                Confirmar
+              </Button>
             </CardFooter>
           </Card>
 
@@ -176,9 +183,24 @@ export function ComponentsPage() {
           <div>
             <h3 className="font-semibold mb-4">Estado de carga</h3>
             <StatCardsGrid columns={3}>
-              <StatCard label="Cargando..." count={0} severity="neutral" loading />
-              <StatCard label="Cargando..." count={0} severity="neutral" loading />
-              <StatCard label="Cargando..." count={0} severity="neutral" loading />
+              <StatCard
+                label="Cargando..."
+                count={0}
+                severity="neutral"
+                loading
+              />
+              <StatCard
+                label="Cargando..."
+                count={0}
+                severity="neutral"
+                loading
+              />
+              <StatCard
+                label="Cargando..."
+                count={0}
+                severity="neutral"
+                loading
+              />
             </StatCardsGrid>
           </div>
 
@@ -209,15 +231,17 @@ export function ComponentsPage() {
 
       {/* LoadingOverlay */}
       <section>
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">LoadingOverlay</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">
+          LoadingOverlay
+        </h2>
         <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 space-y-8">
           <div>
             <Button onClick={() => setShowLoading(true)}>
               Mostrar LoadingOverlay (3s)
             </Button>
             {showLoading && (
-              <LoadingOverlay 
-                message="Cargando datos..." 
+              <LoadingOverlay
+                message="Cargando datos..."
                 visible={showLoading}
                 fullScreen
               />
@@ -226,11 +250,7 @@ export function ComponentsPage() {
           </div>
 
           <div className="relative h-48 bg-slate-100 rounded-lg overflow-hidden">
-            <LoadingOverlay 
-              message="Cargando..." 
-              visible 
-              fullScreen={false}
-            />
+            <LoadingOverlay message="Cargando..." visible fullScreen={false} />
           </div>
 
           <CodeBlock
