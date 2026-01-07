@@ -1,4 +1,4 @@
-import { brandAssets } from "@acacoop/components-library";
+import { brandAssets } from "@acacoop/react-components-library";
 import { CodeBlock } from "../../components/CodeBlock";
 
 export function AssetsPage() {
@@ -62,7 +62,7 @@ export function AssetsPage() {
         <h2 className="text-2xl font-bold text-slate-900 mb-6">Uso</h2>
         <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200">
           <CodeBlock
-            code={`import { brandAssets } from '@acacoop/components-library';
+            code={`import { brandAssets } from '@acacoop/react-components-library';
 
 // Usar en img tags
 <img src={brandAssets.logoIcon} alt="ACA Logo" />

@@ -5,7 +5,7 @@ import {
   shadow,
   fontSize,
   fontWeight,
-} from "@acacoop/components-library";
+} from "@acacoop/react-components-library";
 import { CodeBlock } from "../../components/CodeBlock";
 
 export function TokensPage() {
@@ -59,7 +59,7 @@ export function TokensPage() {
           </div>
 
           <CodeBlock
-            code={`import { COLORS, colors } from '@acacoop/components-library';
+            code={`import { COLORS, colors } from '@acacoop/react-components-library';
 
 // Uso directo
 <div style={{ backgroundColor: COLORS.primary }}>...</div>
@@ -92,7 +92,7 @@ colors.neutral.gray500    // "#757575"`}
           </div>
 
           <CodeBlock
-            code={`import { spacing, gap, padding, margin } from '@acacoop/components-library';
+            code={`import { spacing, gap, padding, margin } from '@acacoop/react-components-library';
 
 // Uso
 <div style={{ padding: spacing[4] }}>...</div>  // 16px
@@ -123,7 +123,7 @@ colors.neutral.gray500    // "#757575"`}
           </div>
 
           <CodeBlock
-            code={`import { borderRadius } from '@acacoop/components-library';
+            code={`import { borderRadius } from '@acacoop/react-components-library';
 
 <div style={{ borderRadius: borderRadius.md }}>...</div>  // 8px
 <div style={{ borderRadius: borderRadius.lg }}>...</div>  // 12px
@@ -152,7 +152,7 @@ colors.neutral.gray500    // "#757575"`}
           </div>
 
           <CodeBlock
-            code={`import { shadow } from '@acacoop/components-library';
+            code={`import { shadow } from '@acacoop/react-components-library';
 
 <div style={{ boxShadow: shadow.sm }}>...</div>
 <div style={{ boxShadow: shadow.md }}>...</div>
@@ -195,7 +195,7 @@ colors.neutral.gray500    // "#757575"`}
           </div>
 
           <CodeBlock
-            code={`import { fontSize, fontWeight, fontFamily } from '@acacoop/components-library';
+            code={`import { fontSize, fontWeight, fontFamily } from '@acacoop/react-components-library';
 
 <p style={{ 
   fontSize: fontSize.lg,      // "18px"

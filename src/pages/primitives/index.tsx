@@ -5,7 +5,7 @@ import {
   Text,
   Caption,
   COLORS,
-} from "@acacoop/components-library";
+} from "@acacoop/react-components-library";
 import { CodeBlock } from "../../components/CodeBlock";
 
 export function PrimitivesPage() {
@@ -54,7 +54,7 @@ export function PrimitivesPage() {
           </div>
 
           <CodeBlock
-            code={`import { Button } from '@acacoop/components-library';
+            code={`import { Button } from '@acacoop/react-components-library';
 
 // Variantes
 <Button variant="primary">Primary</Button>
@@ -105,7 +105,7 @@ export function PrimitivesPage() {
           </div>
 
           <CodeBlock
-            code={`import { Heading, Text, Caption, Label } from '@acacoop/components-library';
+            code={`import { Heading, Text, Caption, Label } from '@acacoop/react-components-library';
 
 // Headings
 <Heading level={1}>Heading 1</Heading>
@@ -164,7 +164,7 @@ export function PrimitivesPage() {
           </div>
 
           <CodeBlock
-            code={`import { Spinner, COLORS } from '@acacoop/components-library';
+            code={`import { Spinner, COLORS } from '@acacoop/react-components-library';
 
 // Tamaños
 <Spinner size="sm" />

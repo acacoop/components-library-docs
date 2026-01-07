@@ -8,7 +8,7 @@ import {
   StatCard,
   StatCardsGrid,
   LoadingOverlay,
-} from "@acacoop/components-library";
+} from "@acacoop/react-components-library";
 import { CodeBlock } from "../../components/CodeBlock";
 import { useState } from "react";
 
@@ -57,7 +57,7 @@ export function ComponentsPage() {
           </div>
 
           <CodeBlock
-            code={`import { ButtonGroup, Button } from '@acacoop/components-library';
+            code={`import { ButtonGroup, Button } from '@acacoop/react-components-library';
 
 <ButtonGroup align="right" spacing="md">
   <Button variant="outline">Cancelar</Button>
@@ -128,7 +128,7 @@ export function ComponentsPage() {
           </Card>
 
           <CodeBlock
-            code={`import { Card, CardHeader, CardContent, CardFooter, Button } from '@acacoop/components-library';
+            code={`import { Card, CardHeader, CardContent, CardFooter, Button } from '@acacoop/react-components-library';
 
 <Card variant="elevated" hoverable>
   <CardHeader 
@@ -205,7 +205,7 @@ export function ComponentsPage() {
           </div>
 
           <CodeBlock
-            code={`import { StatCard, StatCardsGrid } from '@acacoop/components-library';
+            code={`import { StatCard, StatCardsGrid } from '@acacoop/react-components-library';
 
 <StatCardsGrid columns={4}>
   <StatCard
@@ -254,7 +254,7 @@ export function ComponentsPage() {
           </div>
 
           <CodeBlock
-            code={`import { LoadingOverlay } from '@acacoop/components-library';
+            code={`import { LoadingOverlay } from '@acacoop/react-components-library';
 
 // Fullscreen
 <LoadingOverlay 

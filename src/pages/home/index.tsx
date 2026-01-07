@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { CodeBlock } from "../../components/CodeBlock";
-import { Button, brandAssets, COLORS } from "@acacoop/components-library";
+import { Button, brandAssets, COLORS } from "@acacoop/react-components-library";
 
 export function HomePage() {
   return (
@@ -13,7 +13,7 @@ export function HomePage() {
           className="w-20 h-20 mx-auto mb-6"
         />
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FF9100]/10 text-[#FF9100] text-sm font-medium mb-6">
-          v1.2.0 - Latest
+          v0.1.0 - Development
         </div>
         <h1 className="text-5xl font-bold text-slate-900 mb-6">
           Desarrollá más rápido con <br />
@@ -136,7 +136,7 @@ export function HomePage() {
               </div>
               <div className="ml-11">
                 <CodeBlock
-                  code="npm install @acacoop/components-library"
+                  code="npm install @acacoop/react-components-library"
                   language="bash"
                 />
               </div>
@@ -154,12 +154,12 @@ export function HomePage() {
               <div className="ml-11">
                 <CodeBlock
                   code={`// Importar todo desde el paquete principal
-import { Button, Card, COLORS, brandAssets } from '@acacoop/components-library';
+import { Button, Card, COLORS, brandAssets } from '@acacoop/react-components-library';
 
 // O importar desde submódulos específicos
-import { Button, Spinner } from '@acacoop/components-library/primitives';
-import { Card, StatCard } from '@acacoop/components-library/components';
-import { colors, spacing } from '@acacoop/components-library/tokens';`}
+import { Button, Spinner } from '@acacoop/react-components-library/primitives';
+import { Card, StatCard } from '@acacoop/react-components-library/components';
+import { colors, spacing } from '@acacoop/react-components-library/tokens';`}
                   language="tsx"
                 />
               </div>
